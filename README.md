@@ -1,6 +1,21 @@
-# Dockerized Fullstack Starters
+# 🐳 Dockerized Fullstack Starters
 
-**Production-ready, security-hardened Docker and Docker Compose setups for the most popular web development stacks.** Each stack is self-contained and can be run independently, with combined examples showing how to run multiple stacks together.
+<div align="center">
+
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+**Production-ready, security-hardened Docker and Docker Compose setups for the most popular web development stacks.**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Docker](https://img.shields.io/badge/Docker-Ready-blue)](https://www.docker.com/)
+[![Security](https://img.shields.io/badge/Security-Hardened-green)](https://github.com/Rohitkhapre/dockerized-fullstack-starters)
+[![Production](https://img.shields.io/badge/Production-Ready-success)](https://github.com/Rohitkhapre/dockerized-fullstack-starters)
+
+</div>
+
+---
 
 ## 🚀 Features
 
@@ -13,19 +28,39 @@
 - 📚 **Detailed documentation** for each stack
 - 🔧 **Easy customization** and extensibility
 
+## 🛠️ Supported Technology Stacks
+
+<div align="center">
+
+| Technology | Logo | Port | Documentation | Status |
+|------------|------|------|---------------|--------|
+| **Node.js** | ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) | 3000 | [📖 README](node/README.md) | ✅ Ready |
+| **React** | ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) | 8080 | [📖 README](react/README.md) | ✅ Ready |
+| **Flask** | ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) | 5000 | [📖 README](python-flask/README.md) | ✅ Ready |
+| **Django** | ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) | 8000 | [📖 README](django/README.md) | ✅ Ready |
+| **Rails** | ![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white) | 3001 | [📖 README](rails/README.md) | ✅ Ready |
+| **Go** | ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) | 8081 | [📖 README](go/README.md) | ✅ Ready |
+| **Spring Boot** | ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) | 8082 | [📖 README](java-spring/README.md) | ✅ Ready |
+| **Laravel** | ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white) | 9000 | [📖 README](php-laravel/README.md) | ✅ Ready |
+| **.NET Core** | ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) | 8084 | [📖 README](dotnet/README.md) | ✅ Ready |
+| **Angular** | ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) | 8085 | [📖 README](angular/README.md) | ✅ Ready |
+| **Redis** | ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) | 6379 | [📖 README](redis/README.md) | ✅ Ready |
+
+</div>
+
 ## 📁 Directory Structure
 
 ```
 dockerized-fullstack-starters/
 │
-├── node/                    # Node.js (Express) - Port 3000
+├── 🟢 node/                    # Node.js (Express) - Port 3000
 │   ├── app/                 # Your Node.js application code
 │   ├── Dockerfile           # Production-optimized configuration
 │   ├── docker-compose.yml   # Single-stack deployment
 │   ├── .dockerignore       # Build context optimization
 │   └── README.md           # Detailed stack documentation
 │
-├── react/                   # React - Port 8080
+├── ⚛️ react/                   # React - Port 8080
 │   ├── app/                 # Your React application code
 │   ├── Dockerfile           # Multi-stage build with nginx
 │   ├── docker-compose.yml   # Production deployment
@@ -33,56 +68,56 @@ dockerized-fullstack-starters/
 │   ├── .dockerignore       
 │   └── README.md           
 │
-├── python-flask/            # Python Flask - Port 5000
+├── 🐍 python-flask/            # Python Flask - Port 5000
 │   ├── app/                 # Your Flask application code
 │   ├── Dockerfile           # Gunicorn + security hardening
 │   ├── docker-compose.yml   
 │   ├── .dockerignore       
 │   └── README.md           
 │
-├── django/                  # Django - Port 8000
+├── 🎸 django/                  # Django - Port 8000
 │   ├── app/                 # Your Django project
 │   ├── Dockerfile           # Production Django + Gunicorn
 │   ├── docker-compose.yml   
 │   ├── .dockerignore       
 │   └── README.md           
 │
-├── rails/                   # Ruby on Rails - Port 3001
+├── 💎 rails/                   # Ruby on Rails - Port 3001
 │   ├── app/                 # Your Rails application
 │   ├── Dockerfile           # Asset pipeline + Puma server
 │   ├── docker-compose.yml   
 │   ├── .dockerignore       
 │   └── README.md           
 │
-├── go/                      # Go Web Apps - Port 8081
+├── 🐹 go/                      # Go Web Apps - Port 8081
 │   ├── app/                 # Your Go application
 │   ├── Dockerfile           # Static binary compilation
 │   ├── docker-compose.yml   
 │   ├── .dockerignore       
 │   └── README.md           
 │
-├── java-spring/             # Java Spring Boot - Port 8082
+├── ☕ java-spring/             # Java Spring Boot - Port 8082
 │   ├── app/                 # Your Spring Boot project
 │   ├── Dockerfile           # Maven + JRE optimization
 │   ├── docker-compose.yml   
 │   ├── .dockerignore       
 │   └── README.md           
 │
-├── php-laravel/             # PHP Laravel - Port 9000
+├── 🐘 php-laravel/             # PHP Laravel - Port 9000
 │   ├── app/                 # Your Laravel application
 │   ├── Dockerfile           # Composer + PHP-FPM
 │   ├── docker-compose.yml   
 │   ├── .dockerignore       
 │   └── README.md           
 │
-├── dotnet/                  # ASP.NET Core - Port 8084
+├── 🔷 dotnet/                  # ASP.NET Core - Port 8084
 │   ├── app/                 # Your .NET application
 │   ├── Dockerfile           # SDK + Runtime separation
 │   ├── docker-compose.yml   
 │   ├── .dockerignore       
 │   └── README.md           
 │
-├── angular/                 # Angular - Port 8085
+├── 🅰️ angular/                 # Angular - Port 8085
 │   ├── app/                 # Your Angular application
 │   ├── Dockerfile           # Angular CLI + nginx
 │   ├── docker-compose.yml   
@@ -90,17 +125,31 @@ dockerized-fullstack-starters/
 │   ├── .dockerignore       
 │   └── README.md           
 │
-├── combined-examples/       # Multi-stack deployments
+├── 🔴 redis/                   # Redis Cache - Port 6379
+│   ├── Dockerfile           # Optimized Redis configuration
+│   ├── docker-compose.yml   # Redis with persistence
+│   ├── redis.conf          # Production Redis config
+│   ├── .dockerignore       
+│   └── README.md           
+│
+├── 🔗 combined-examples/       # Multi-stack deployments
 │   ├── node-react/         # Backend + Frontend combination
 │   │   └── docker-compose.yml
 │   ├── flask-react/        # Python API + React frontend
 │   │   └── docker-compose.yml
 │   └── ...                 # More combinations
 │
-└── README.md               # This file
+└── 📖 README.md               # This file
 ```
 
 ## 🔒 Security Features
+
+<div align="center">
+
+![Security](https://img.shields.io/badge/Security-First-red?style=for-the-badge&logo=shield&logoColor=white)
+![Best Practices](https://img.shields.io/badge/Best-Practices-green?style=for-the-badge&logo=checkmarx&logoColor=white)
+
+</div>
 
 All stacks include enterprise-grade security hardening:
 
@@ -127,6 +176,12 @@ All stacks include enterprise-grade security hardening:
 
 ## 🚦 Quick Start
 
+<div align="center">
+
+![Docker Compose](https://img.shields.io/badge/docker%20compose-up-blue?style=for-the-badge&logo=docker&logoColor=white)
+
+</div>
+
 ### Single Stack Usage
 
 Each stack can be run independently:
@@ -140,8 +195,8 @@ docker compose up --build
 cd react
 docker compose up --build
 
-# Example: Run Django stack
-cd django
+# Example: Run Redis cache
+cd redis
 docker compose up --build
 ```
 
@@ -150,8 +205,8 @@ docker compose up --build
 Run multiple stacks together:
 
 ```bash
-# Example: Node.js API + React Frontend
-cd combined-examples/node-react
+# Example: Node.js API + React Frontend + Redis Cache
+cd combined-examples/node-react-redis
 docker compose up --build
 
 # Example: Flask API + React Frontend
@@ -161,20 +216,22 @@ docker compose up --build
 
 ## 📚 Stack Documentation
 
-Each stack includes comprehensive documentation:
+<div align="center">
 
-| Stack | Technology | Port | Documentation |
-|-------|------------|------|---------------|
-| **Node.js** | Express, Gunicorn | 3000 | [📖 Node.js README](node/README.md) |
-| **React** | React, nginx | 8080 | [📖 React README](react/README.md) |
-| **Flask** | Python, Gunicorn | 5000 | [📖 Flask README](python-flask/README.md) |
-| **Django** | Python, Gunicorn | 8000 | [📖 Django README](django/README.md) |
-| **Rails** | Ruby, Puma | 3001 | [📖 Rails README](rails/README.md) |
-| **Go** | Go, HTTP server | 8081 | [📖 Go README](go/README.md) |
-| **Spring** | Java, Spring Boot | 8082 | [📖 Spring README](java-spring/README.md) |
-| **Laravel** | PHP, PHP-FPM | 9000 | [📖 Laravel README](php-laravel/README.md) |
-| **.NET** | ASP.NET Core | 8084 | [📖 .NET README](dotnet/README.md) |
-| **Angular** | Angular, nginx | 8085 | [📖 Angular README](angular/README.md) |
+![Documentation](https://img.shields.io/badge/Documentation-Complete-brightgreen?style=for-the-badge&logo=gitbook&logoColor=white)
+
+</div>
+
+Each stack includes comprehensive documentation with:
+- 🚀 Quick start instructions
+- 🔧 Application requirements and examples  
+- 🛡️ Security features explanation
+- 🏭 Production configuration examples
+- 🗄️ Database integration examples
+- 🌐 API development patterns
+- ⚙️ Customization options
+- 🔍 Troubleshooting sections
+- ⚡ Performance tuning tips
 
 ## 🔧 Getting Started with Your Code
 
@@ -206,6 +263,13 @@ docker compose up -d
 - Configure database connections
 
 ## 🏗️ Production Deployment Considerations
+
+<div align="center">
+
+![Production](https://img.shields.io/badge/Production-Ready-success?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Monitoring](https://img.shields.io/badge/Monitoring-Enabled-blue?style=for-the-badge&logo=prometheus&logoColor=white)
+
+</div>
 
 ### Environment Variables
 - Use Docker secrets or encrypted environment files
@@ -298,6 +362,12 @@ services:
 
 ## 📊 Performance Optimization
 
+<div align="center">
+
+![Performance](https://img.shields.io/badge/Performance-Optimized-orange?style=for-the-badge&logo=speedtest&logoColor=white)
+
+</div>
+
 ### Image Size Optimization
 - Multi-stage builds remove build dependencies
 - Alpine Linux base images for smaller footprint
@@ -317,6 +387,12 @@ services:
 
 ## 🤝 Contributing
 
+<div align="center">
+
+![Contributors](https://img.shields.io/badge/Contributors-Welcome-brightgreen?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
+
 Contributions are welcome! Please feel free to submit:
 
 - **New technology stacks** with similar security standards
@@ -332,6 +408,12 @@ Contributions are welcome! Please feel free to submit:
 - Maintain consistency with existing stacks
 
 ## 📋 Requirements
+
+<div align="center">
+
+![Requirements](https://img.shields.io/badge/Requirements-Docker%2020.10%2B-blue?style=for-the-badge&logo=docker&logoColor=white)
+
+</div>
 
 - **Docker Engine** 20.10+ 
 - **Docker Compose** v2.0+
@@ -363,10 +445,23 @@ Contributions are welcome! Please feel free to submit:
 
 ## 📄 License
 
+<div align="center">
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+</div>
+
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
+<div align="center">
+
 **Built with ❤️ for the developer community by [Rohit Khapre](mailto:rkhapre111@gmail.com)**
 
+![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)
+![Open Source](https://img.shields.io/badge/Open%20Source-Yes-green?style=for-the-badge)
+
 *Ready to deploy. Secure by default. Scalable by design.*
+
+</div>

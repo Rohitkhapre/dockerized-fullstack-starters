@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  redis:
+    build: .
+    container_name: redis-cache
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+      - redis_logs:/var/log/redis
+    environment:
+      - REDIS_REPLICATION_MODE=master
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-}
+    networks:
+      - redis_network
+    # Security hardening
+    cap_drop:
+      - ALL
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp
+      - /var/run
+    # Resource limits
+    mem_limit: 1g
+    cpus: 1.0
+    # Health check
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    labels:
+      - "maintainer=Rohit Khapre <rkhapre111@gmail.com>"
+      - "version=1.0"
+      - "description=Production Redis Cache Server"
+
+networks:
+  redis_network:
+    driver: bridge
+    name: redis_network
+
+volumes:
+  redis_data:
+    driver: local
+    name: redis_data
+  redis_logs:
+    driver: local
+    name: redis_logs 
