@@ -6,141 +6,185 @@
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-**Production-ready, security-hardened Docker and Docker Compose setups for the most popular web development stacks.**
+**🚀 Production-ready, security-hardened Docker setups for modern web development stacks**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue)](https://www.docker.com/)
 [![Security](https://img.shields.io/badge/Security-Hardened-green)](https://github.com/Rohitkhapre/dockerized-fullstack-starters)
 [![Production](https://img.shields.io/badge/Production-Ready-success)](https://github.com/Rohitkhapre/dockerized-fullstack-starters)
 
+*Ready to deploy. Secure by default. Scalable by design.*
+
 </div>
 
 ---
 
-## 🚀 Features
+## 📋 Table of Contents
 
-- ✅ **Enterprise-ready** production configurations
-- 🔒 **Security-hardened** containers with non-root users
+- [🎯 Overview](#-overview)
+- [🛠️ Technology Stacks](#️-technology-stacks)
+- [🚀 Quick Start](#-quick-start)
+- [📁 Project Structure](#-project-structure)
+- [🔒 Security Features](#-security-features)
+- [🏗️ Production Deployment](#️-production-deployment)
+- [📦 Container Registry](#-container-registry)
+- [🔧 Customization](#-customization)
+- [📊 Monitoring & Scaling](#-monitoring--scaling)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+
+---
+
+## 🎯 Overview
+
+This repository provides **enterprise-grade Docker configurations** for the most popular web development technologies. Each stack is:
+
+- ✅ **Production-ready** with optimized configurations
+- 🔒 **Security-hardened** with non-root users and minimal attack surface
 - 🏗️ **Multi-stage builds** for optimized image sizes
-- 🛡️ **Comprehensive security headers** and best practices
-- 📊 **Health checks** and monitoring endpoints
-- 📈 **Resource limits** and performance optimization
-- 📚 **Detailed documentation** for each stack
-- 🔧 **Easy customization** and extensibility
+- 📊 **Health checks** and monitoring enabled
+- 📚 **Thoroughly documented** with real-world examples
+- 🔧 **Easily customizable** for your specific needs
 
-## 🛠️ Supported Technology Stacks
+---
+
+## 🛠️ Technology Stacks
 
 <div align="center">
 
-| Technology | Logo | Port | Documentation | Status |
-|------------|------|------|---------------|--------|
-| **Node.js** | ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) | 3000 | [📖 README](node/README.md) | ✅ Ready |
-| **React** | ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) | 8080 | [📖 README](react/README.md) | ✅ Ready |
-| **Flask** | ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) | 5000 | [📖 README](python-flask/README.md) | ✅ Ready |
-| **Django** | ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) | 8000 | [📖 README](django/README.md) | ✅ Ready |
-| **Rails** | ![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white) | 3001 | [📖 README](rails/README.md) | ✅ Ready |
-| **Go** | ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) | 8081 | [📖 README](go/README.md) | ✅ Ready |
-| **Spring Boot** | ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) | 8082 | [📖 README](java-spring/README.md) | ✅ Ready |
-| **Laravel** | ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white) | 9000 | [📖 README](php-laravel/README.md) | ✅ Ready |
-| **.NET Core** | ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) | 8084 | [📖 README](dotnet/README.md) | ✅ Ready |
-| **Angular** | ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) | 8085 | [📖 README](angular/README.md) | ✅ Ready |
-| **Redis** | ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) | 6379 | [📖 README](redis/README.md) | ✅ Ready |
+### Frontend Technologies
+| Stack | Logo | Port | Documentation | Status |
+|-------|------|------|---------------|--------|
+| **React** | ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) | 8080 | [📖 Guide](react/README.md) | ✅ Ready |
+| **Angular** | ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) | 8085 | [📖 Guide](angular/README.md) | ✅ Ready |
+
+### Backend Technologies
+| Stack | Logo | Port | Documentation | Status |
+|-------|------|------|---------------|--------|
+| **Node.js** | ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) | 3000 | [📖 Guide](node/README.md) | ✅ Ready |
+| **Python Flask** | ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) | 5000 | [📖 Guide](python-flask/README.md) | ✅ Ready |
+| **Django** | ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) | 8000 | [📖 Guide](django/README.md) | ✅ Ready |
+| **Ruby on Rails** | ![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white) | 3001 | [📖 Guide](rails/README.md) | ✅ Ready |
+| **Go** | ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) | 8081 | [📖 Guide](go/README.md) | ✅ Ready |
+| **Spring Boot** | ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) | 8082 | [📖 Guide](java-spring/README.md) | ✅ Ready |
+| **Laravel** | ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white) | 9000 | [📖 Guide](php-laravel/README.md) | ✅ Ready |
+| **.NET Core** | ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) | 8084 | [📖 Guide](dotnet/README.md) | ✅ Ready |
+
+### Data & Caching
+| Stack | Logo | Port | Documentation | Status |
+|-------|------|------|---------------|--------|
+| **Redis** | ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) | 6379 | [📖 Guide](redis/README.md) | ✅ Ready |
 
 </div>
 
-## 📁 Directory Structure
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+<div align="center">
+
+![Requirements](https://img.shields.io/badge/Requirements-Docker%2020.10%2B-blue?style=for-the-badge&logo=docker&logoColor=white)
+
+</div>
+
+- **Docker Engine** 20.10+
+- **Docker Compose** v2.0+
+- **Git** for cloning the repository
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/Rohitkhapre/dockerized-fullstack-starters.git
+cd dockerized-fullstack-starters
+```
+
+### 2️⃣ Choose Your Stack
+
+```bash
+# Navigate to your preferred technology
+cd node          # For Node.js
+cd react         # For React
+cd python-flask  # For Flask
+cd redis         # For Redis
+# ... and so on
+```
+
+### 3️⃣ Add Your Application Code
+
+```bash
+# Place your application in the app/ directory
+cp -r /path/to/your/app/* ./app/
+```
+
+### 4️⃣ Build and Run
+
+```bash
+# Single command to build and run
+docker compose up --build
+
+# Run in background (detached mode)
+docker compose up --build -d
+
+# View logs
+docker compose logs -f
+```
+
+### 5️⃣ Access Your Application
+
+Your application will be available at the respective ports:
+- **Frontend**: http://localhost:8080 (React/Angular)
+- **Backend API**: http://localhost:3000 (Node.js)
+- **Cache**: http://localhost:6379 (Redis)
+
+---
+
+## 📁 Project Structure
 
 ```
 dockerized-fullstack-starters/
 │
-├── 🟢 node/                    # Node.js (Express) - Port 3000
-│   ├── app/                 # Your Node.js application code
-│   ├── Dockerfile           # Production-optimized configuration
-│   ├── docker-compose.yml   # Single-stack deployment
-│   ├── .dockerignore       # Build context optimization
-│   └── README.md           # Detailed stack documentation
+├── 📱 Frontend Stacks/
+│   ├── ⚛️ react/                 # React + nginx
+│   └── 🅰️ angular/               # Angular + nginx
 │
-├── ⚛️ react/                   # React - Port 8080
-│   ├── app/                 # Your React application code
-│   ├── Dockerfile           # Multi-stage build with nginx
-│   ├── docker-compose.yml   # Production deployment
-│   ├── nginx.conf          # Security-hardened nginx config
-│   ├── .dockerignore       
-│   └── README.md           
+├── 🖥️ Backend Stacks/
+│   ├── 🟢 node/                  # Node.js + Express
+│   ├── 🐍 python-flask/          # Python + Flask
+│   ├── 🎸 django/                # Python + Django
+│   ├── 💎 rails/                 # Ruby on Rails
+│   ├── 🐹 go/                    # Go Web Server
+│   ├── ☕ java-spring/           # Java + Spring Boot
+│   ├── 🐘 php-laravel/           # PHP + Laravel
+│   └── 🔷 dotnet/                # .NET Core
 │
-├── 🐍 python-flask/            # Python Flask - Port 5000
-│   ├── app/                 # Your Flask application code
-│   ├── Dockerfile           # Gunicorn + security hardening
-│   ├── docker-compose.yml   
-│   ├── .dockerignore       
-│   └── README.md           
+├── 💾 Data & Caching/
+│   └── 🔴 redis/                 # Redis Cache
 │
-├── 🎸 django/                  # Django - Port 8000
-│   ├── app/                 # Your Django project
-│   ├── Dockerfile           # Production Django + Gunicorn
-│   ├── docker-compose.yml   
-│   ├── .dockerignore       
-│   └── README.md           
+├── 🔗 Combined Examples/
+│   ├── node-react/              # Full-stack Node + React
+│   ├── flask-react/             # Python API + React
+│   └── node-react-redis/        # Complete stack with cache
 │
-├── 💎 rails/                   # Ruby on Rails - Port 3001
-│   ├── app/                 # Your Rails application
-│   ├── Dockerfile           # Asset pipeline + Puma server
-│   ├── docker-compose.yml   
-│   ├── .dockerignore       
-│   └── README.md           
-│
-├── 🐹 go/                      # Go Web Apps - Port 8081
-│   ├── app/                 # Your Go application
-│   ├── Dockerfile           # Static binary compilation
-│   ├── docker-compose.yml   
-│   ├── .dockerignore       
-│   └── README.md           
-│
-├── ☕ java-spring/             # Java Spring Boot - Port 8082
-│   ├── app/                 # Your Spring Boot project
-│   ├── Dockerfile           # Maven + JRE optimization
-│   ├── docker-compose.yml   
-│   ├── .dockerignore       
-│   └── README.md           
-│
-├── 🐘 php-laravel/             # PHP Laravel - Port 9000
-│   ├── app/                 # Your Laravel application
-│   ├── Dockerfile           # Composer + PHP-FPM
-│   ├── docker-compose.yml   
-│   ├── .dockerignore       
-│   └── README.md           
-│
-├── 🔷 dotnet/                  # ASP.NET Core - Port 8084
-│   ├── app/                 # Your .NET application
-│   ├── Dockerfile           # SDK + Runtime separation
-│   ├── docker-compose.yml   
-│   ├── .dockerignore       
-│   └── README.md           
-│
-├── 🅰️ angular/                 # Angular - Port 8085
-│   ├── app/                 # Your Angular application
-│   ├── Dockerfile           # Angular CLI + nginx
-│   ├── docker-compose.yml   
-│   ├── nginx.conf          # SPA routing + security headers
-│   ├── .dockerignore       
-│   └── README.md           
-│
-├── 🔴 redis/                   # Redis Cache - Port 6379
-│   ├── Dockerfile           # Optimized Redis configuration
-│   ├── docker-compose.yml   # Redis with persistence
-│   ├── redis.conf          # Production Redis config
-│   ├── .dockerignore       
-│   └── README.md           
-│
-├── 🔗 combined-examples/       # Multi-stack deployments
-│   ├── node-react/         # Backend + Frontend combination
-│   │   └── docker-compose.yml
-│   ├── flask-react/        # Python API + React frontend
-│   │   └── docker-compose.yml
-│   └── ...                 # More combinations
-│
-└── 📖 README.md               # This file
+└── 📚 Documentation/
+    ├── README.md                # This file
+    └── */README.md              # Individual stack guides
 ```
+
+### Individual Stack Structure
+
+```
+technology-name/
+├── app/                         # 📁 Your application code goes here
+├── Dockerfile                   # 🐳 Production-optimized configuration
+├── docker-compose.yml           # 🎼 Orchestration with security settings
+├── .dockerignore               # 🚫 Build context optimization
+├── README.md                   # 📖 Detailed usage guide
+└── additional-configs/         # ⚙️ (nginx.conf, redis.conf, etc.)
+```
+
+---
 
 ## 🔒 Security Features
 
@@ -151,118 +195,30 @@ dockerized-fullstack-starters/
 
 </div>
 
-All stacks include enterprise-grade security hardening:
-
-### Container Security
-- **Non-root execution** with custom user/group (UID/GID 1000)
-- **Read-only filesystem** with tmpfs for temporary files
+### 🛡️ Container Security
+- **Non-root execution** with custom users (UID/GID 1000)
+- **Read-only filesystems** with tmpfs for temporary files
 - **Capability dropping** - all Linux capabilities removed
 - **No new privileges** security option enabled
 - **Pinned base images** with specific versions
 - **Minimal attack surface** - only required packages
 
-### Application Security
+### 🔐 Application Security
 - **Security headers** configured (CSP, HSTS, XSS protection)
 - **Server tokens disabled** (nginx/apache)
 - **Build cache cleanup** to reduce image size
 - **Strict file permissions** (750) on application files
 - **Environment variable** best practices
 
-### Network Security
+### 🌐 Network Security
 - **Health check endpoints** for monitoring
 - **Resource limits** (memory, CPU) configured
 - **Proper port exposure** with documentation
-- **CORS configuration** examples where applicable
+- **Network isolation** with custom Docker networks
 
-## 🚦 Quick Start
+---
 
-<div align="center">
-
-![Docker Compose](https://img.shields.io/badge/docker%20compose-up-blue?style=for-the-badge&logo=docker&logoColor=white)
-
-</div>
-
-### Single Stack Usage
-
-Each stack can be run independently:
-
-```bash
-# Example: Run Node.js stack
-cd node
-docker compose up --build
-
-# Example: Run React stack  
-cd react
-docker compose up --build
-
-# Example: Run Redis cache
-cd redis
-docker compose up --build
-```
-
-### Combined Stacks
-
-Run multiple stacks together:
-
-```bash
-# Example: Node.js API + React Frontend + Redis Cache
-cd combined-examples/node-react-redis
-docker compose up --build
-
-# Example: Flask API + React Frontend
-cd combined-examples/flask-react
-docker compose up --build
-```
-
-## 📚 Stack Documentation
-
-<div align="center">
-
-![Documentation](https://img.shields.io/badge/Documentation-Complete-brightgreen?style=for-the-badge&logo=gitbook&logoColor=white)
-
-</div>
-
-Each stack includes comprehensive documentation with:
-- 🚀 Quick start instructions
-- 🔧 Application requirements and examples  
-- 🛡️ Security features explanation
-- 🏭 Production configuration examples
-- 🗄️ Database integration examples
-- 🌐 API development patterns
-- ⚙️ Customization options
-- 🔍 Troubleshooting sections
-- ⚡ Performance tuning tips
-
-## 🔧 Getting Started with Your Code
-
-### Step 1: Choose Your Stack
-Navigate to the directory for your technology stack.
-
-### Step 2: Add Your Application Code
-Place your application code in the `app/` directory of your chosen stack.
-
-### Step 3: Review Requirements
-Check the stack's README.md for specific requirements (package.json, requirements.txt, etc.).
-
-### Step 4: Build and Run
-```bash
-# Build the image
-docker compose build
-
-# Run the container
-docker compose up
-
-# Run in detached mode
-docker compose up -d
-```
-
-### Step 5: Customize (Optional)
-- Update environment variables in docker-compose.yml
-- Modify Dockerfile for additional dependencies
-- Adjust nginx configurations for frontend stacks
-- Configure database connections
-
-## 🏗️ Production Deployment Considerations
+## 🏗️ Production Deployment
 
 <div align="center">
 
@@ -271,119 +227,376 @@ docker compose up -d
 
 </div>
 
-### Environment Variables
-- Use Docker secrets or encrypted environment files
-- Never commit sensitive data to version control
-- Use different configurations for dev/staging/production
+### 🌍 Environment Configuration
 
-### Database Integration
-- Use external managed databases in production
-- Configure connection pooling and timeouts
-- Implement proper backup strategies
-
-### Reverse Proxy & Load Balancing
-- Use nginx or Traefik for SSL termination
-- Implement load balancing for multiple instances
-- Configure rate limiting and security rules
-
-### Monitoring & Logging
-- All stacks include health check endpoints
-- Configure centralized logging (ELK, Fluentd)
-- Set up monitoring (Prometheus, Grafana)
-- Implement alerting for critical issues
-
-### Scaling & Orchestration
-- Use Docker Swarm or Kubernetes for orchestration
-- Configure horizontal pod autoscaling
-- Implement blue-green or rolling deployments
-
-## 🛠️ Customization Examples
-
-### Change Application Ports
-```yaml
-# In docker-compose.yml
-ports:
-  - "your-port:container-port"
+#### Create Environment Files
+```bash
+# Create .env file for production
+cat > .env << EOF
+NODE_ENV=production
+DATABASE_URL=postgresql://user:pass@db:5432/myapp
+REDIS_URL=redis://redis:6379
+SECRET_KEY=your-super-secret-key
+API_KEY=your-api-key
+EOF
 ```
 
-### Add Database Services
+#### Environment-Specific Compose
 ```yaml
-# Example: Adding PostgreSQL
+# docker-compose.prod.yml
+version: '3.8'
 services:
-  your-app:
-    # ... existing configuration
+  app:
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - REDIS_URL=${REDIS_URL}
+    restart: unless-stopped
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          memory: 1G
+          cpus: '0.5'
+```
+
+### 🔄 CI/CD Pipeline Example
+
+#### GitHub Actions Workflow
+```yaml
+# .github/workflows/deploy.yml
+name: Deploy to Production
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build and Deploy
+        run: |
+          docker compose -f docker-compose.prod.yml build
+          docker compose -f docker-compose.prod.yml up -d
+```
+
+---
+
+## 📦 Container Registry
+
+<div align="center">
+
+![Docker Hub](https://img.shields.io/badge/Docker%20Hub-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![AWS ECR](https://img.shields.io/badge/AWS%20ECR-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Google GCR](https://img.shields.io/badge/Google%20GCR-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Azure ACR](https://img.shields.io/badge/Azure%20ACR-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+
+</div>
+
+### 🐳 Docker Hub
+
+#### 1. Login to Docker Hub
+```bash
+docker login
+# Enter your Docker Hub username and password
+```
+
+#### 2. Build and Tag Images
+```bash
+# Build your image
+docker build -t your-username/app-name:tag ./node
+
+# Tag for different versions
+docker tag your-username/app-name:tag your-username/app-name:latest
+docker tag your-username/app-name:tag your-username/app-name:v1.0.0
+```
+
+#### 3. Push to Docker Hub
+```bash
+# Push specific tag
+docker push your-username/app-name:tag
+
+# Push all tags
+docker push your-username/app-name --all-tags
+```
+
+#### 4. Use in Production
+```yaml
+# docker-compose.prod.yml
+services:
+  app:
+    image: your-username/app-name:v1.0.0
+    # Remove 'build' directive for production
+```
+
+### ☁️ AWS Elastic Container Registry (ECR)
+
+#### 1. Create ECR Repository
+```bash
+# Install AWS CLI
+aws ecr create-repository --repository-name my-app --region us-west-2
+```
+
+#### 2. Get Login Token
+```bash
+# Get login command
+aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 123456789012.dkr.ecr.us-west-2.amazonaws.com
+```
+
+#### 3. Build and Push
+```bash
+# Build image
+docker build -t my-app ./node
+
+# Tag for ECR
+docker tag my-app:latest 123456789012.dkr.ecr.us-west-2.amazonaws.com/my-app:latest
+
+# Push to ECR
+docker push 123456789012.dkr.ecr.us-west-2.amazonaws.com/my-app:latest
+```
+
+#### 4. Deploy from ECR
+```yaml
+# docker-compose.prod.yml
+services:
+  app:
+    image: 123456789012.dkr.ecr.us-west-2.amazonaws.com/my-app:latest
+```
+
+### 🔵 Google Container Registry (GCR)
+
+#### 1. Configure Authentication
+```bash
+# Install Google Cloud SDK
+gcloud auth configure-docker
+```
+
+#### 2. Build and Push
+```bash
+# Build image
+docker build -t gcr.io/PROJECT-ID/app-name:tag ./node
+
+# Push to GCR
+docker push gcr.io/PROJECT-ID/app-name:tag
+```
+
+#### 3. Use in Kubernetes
+```yaml
+# k8s-deployment.yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+      - name: app
+        image: gcr.io/PROJECT-ID/app-name:tag
+```
+
+### 🔷 Azure Container Registry (ACR)
+
+#### 1. Create ACR
+```bash
+# Create resource group and ACR
+az group create --name myResourceGroup --location eastus
+az acr create --resource-group myResourceGroup --name myregistry --sku Basic
+```
+
+#### 2. Login and Push
+```bash
+# Login to ACR
+az acr login --name myregistry
+
+# Build and push
+docker build -t myregistry.azurecr.io/my-app:v1 ./node
+docker push myregistry.azurecr.io/my-app:v1
+```
+
+### 🚀 Private Registry Setup
+
+#### 1. Docker Registry Server
+```yaml
+# registry-compose.yml
+version: '3.8'
+services:
+  registry:
+    image: registry:2
+    ports:
+      - "5000:5000"
+    environment:
+      REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
+    volumes:
+      - registry-data:/data
+volumes:
+  registry-data:
+```
+
+#### 2. Push to Private Registry
+```bash
+# Tag for private registry
+docker tag my-app:latest localhost:5000/my-app:latest
+
+# Push to private registry
+docker push localhost:5000/my-app:latest
+```
+
+### 📋 Registry Best Practices
+
+#### Image Tagging Strategy
+```bash
+# Semantic versioning
+docker tag app:latest your-registry/app:1.2.3
+docker tag app:latest your-registry/app:1.2
+docker tag app:latest your-registry/app:1
+docker tag app:latest your-registry/app:latest
+
+# Environment-based tags
+docker tag app:latest your-registry/app:dev
+docker tag app:latest your-registry/app:staging
+docker tag app:latest your-registry/app:prod
+```
+
+#### Multi-Architecture Builds
+```bash
+# Create buildx builder
+docker buildx create --name mybuilder --use
+
+# Build for multiple architectures
+docker buildx build --platform linux/amd64,linux/arm64 -t your-registry/app:latest --push ./node
+```
+
+#### Registry Security
+```bash
+# Use specific digest for production
+docker pull your-registry/app@sha256:abc123...
+
+# Scan images for vulnerabilities
+docker scout cves your-registry/app:latest
+```
+
+---
+
+## 🔧 Customization
+
+### 📊 Resource Limits
+```yaml
+# Adjust in docker-compose.yml
+services:
+  app:
+    mem_limit: 1g          # Memory limit
+    cpus: 0.5             # CPU limit
+    ulimits:
+      nofile: 65536       # File descriptor limit
+```
+
+### 🔌 Add Database Services
+```yaml
+# PostgreSQL example
+services:
+  app:
     depends_on:
       - db
+      - redis
   
   db:
     image: postgres:15-alpine
     environment:
       POSTGRES_DB: myapp
       POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
+    
+  redis:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
 
 volumes:
-  db_data:
+  postgres_data:
+  redis_data:
 ```
 
-### Environment-Specific Configuration
+### 🌐 Reverse Proxy with nginx
 ```yaml
-# Use .env files
-environment:
-  - NODE_ENV=${NODE_ENV:-production}
-  - DATABASE_URL=${DATABASE_URL}
-  - API_KEY=${API_KEY}
-```
-
-## 🧪 Development vs Production
-
-These configurations are optimized for **production use**. For development:
-
-- Add volume mounts for live code reloading
-- Remove security constraints (read-only, capabilities)
-- Use development servers instead of production servers
-- Enable debug modes and verbose logging
-
-Example development override:
-```yaml
-# docker-compose.override.yml
+# nginx-proxy example
 services:
-  your-app:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
     volumes:
-      - ./app:/app
-    environment:
-      - NODE_ENV=development
-    # Remove production security constraints
-    cap_drop: []
-    read_only: false
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/ssl
+    depends_on:
+      - app
 ```
 
-## 📊 Performance Optimization
+---
+
+## 📊 Monitoring & Scaling
 
 <div align="center">
 
-![Performance](https://img.shields.io/badge/Performance-Optimized-orange?style=for-the-badge&logo=speedtest&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 
 </div>
 
-### Image Size Optimization
-- Multi-stage builds remove build dependencies
-- Alpine Linux base images for smaller footprint
-- Build cache cleanup and package manager cache removal
-- Only production dependencies included
+### 📈 Health Monitoring
+```yaml
+# Enhanced health checks
+services:
+  app:
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+```
 
-### Runtime Performance
-- Resource limits prevent resource exhaustion
-- Health checks enable proper load balancing
-- Optimized server configurations (worker processes, etc.)
-- Static asset optimization and caching
+### 📊 Metrics Collection
+```yaml
+# Add Prometheus monitoring
+services:
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+```
 
-### Build Performance
-- Docker layer caching optimized
-- Dependency installation separated from code copy
-- `.dockerignore` files reduce build context
+### 🔄 Load Balancing
+```yaml
+# Multiple app instances
+services:
+  app:
+    deploy:
+      replicas: 3
+    
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+```
+
+---
 
 ## 🤝 Contributing
 
@@ -393,55 +606,92 @@ services:
 
 </div>
 
-Contributions are welcome! Please feel free to submit:
+### 🌟 How to Contribute
 
-- **New technology stacks** with similar security standards
-- **Security improvements** and best practices
-- **Performance optimizations** 
-- **Documentation enhancements**
-- **Bug fixes and improvements**
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
 
-### Guidelines
+### 📝 Contribution Guidelines
+
 - Follow existing security hardening patterns
 - Include comprehensive documentation
 - Test configurations thoroughly
 - Maintain consistency with existing stacks
+- Add integration examples where applicable
 
-## 📋 Requirements
+### 🎯 Areas for Contribution
 
-<div align="center">
+- **New technology stacks** with similar security standards
+- **Security improvements** and best practices
+- **Performance optimizations**
+- **Documentation enhancements**
+- **CI/CD pipeline examples**
+- **Kubernetes manifests**
 
-![Requirements](https://img.shields.io/badge/Requirements-Docker%2020.10%2B-blue?style=for-the-badge&logo=docker&logoColor=white)
-
-</div>
-
-- **Docker Engine** 20.10+ 
-- **Docker Compose** v2.0+
-- **System requirements** vary by stack (see individual READMEs)
+---
 
 ## 🔍 Troubleshooting
 
-### Common Issues
+### 🚨 Common Issues
 
-**Build failures:**
-- Check Docker version compatibility
-- Verify application dependencies and configuration
-- Review Dockerfile syntax and paths
+#### Build Failures
+```bash
+# Check Docker version
+docker --version
 
-**Permission errors:**
-- Ensure your application doesn't require root privileges
-- Check file ownership and permissions in app/ directory
-- Verify tmpfs mounts for writable directories
+# Clean Docker system
+docker system prune -a
 
-**Network connectivity:**
-- Check port conflicts with existing services
-- Verify application binds to 0.0.0.0, not localhost
-- Review firewall and Docker network configuration
+# Rebuild with no cache
+docker compose build --no-cache
+```
 
-**Health check failures:**
-- Implement health endpoints in your application
-- Verify health check commands and timeouts
-- Check application startup time vs health check start period
+#### Permission Errors
+```bash
+# Fix ownership issues
+sudo chown -R $USER:$USER ./app
+
+# Check file permissions
+ls -la app/
+```
+
+#### Network Issues
+```bash
+# Check port conflicts
+netstat -tulpn | grep :3000
+
+# Restart Docker
+sudo systemctl restart docker
+```
+
+#### Health Check Failures
+```bash
+# Check application logs
+docker compose logs app
+
+# Test health endpoint manually
+curl -f http://localhost:3000/health
+```
+
+---
+
+## 📞 Support
+
+<div align="center">
+
+![Support](https://img.shields.io/badge/Support-Available-success?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
+
+- 📧 **Email**: [rkhapre111@gmail.com](mailto:rkhapre111@gmail.com)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/Rohitkhapre/dockerized-fullstack-starters/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/Rohitkhapre/dockerized-fullstack-starters/discussions)
+- 📖 **Documentation**: Individual stack README files
+
+---
 
 ## 📄 License
 
@@ -451,17 +701,24 @@ Contributions are welcome! Please feel free to submit:
 
 </div>
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for the developer community by [Rohit Khapre](mailto:rkhapre111@gmail.com)**
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Rohitkhapre/dockerized-fullstack-starters&type=Date)](https://star-history.com/#Rohitkhapre/dockerized-fullstack-starters&Date)
+
+---
+
+**Built with ❤️ for the developer community**
 
 ![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-green?style=for-the-badge)
+![Production Ready](https://img.shields.io/badge/Production-Ready-success?style=for-the-badge)
 
-*Ready to deploy. Secure by default. Scalable by design.*
+**⭐ Star this repository if it helped you!**
 
 </div>
