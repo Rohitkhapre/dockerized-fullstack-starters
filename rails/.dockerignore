@@ -1,0 +1,5 @@
+log/*
+tmp/*
+.env
+Dockerfile
+docker-compose.yml 
